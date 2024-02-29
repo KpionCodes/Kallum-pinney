@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ohmegle</title>
+  <link rel="icon" href="img/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/chat.css">
+  <link rel="stylesheet" href="../css/chat-phone.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="favicon/msapplication-TileColor" content="#da532c">
+  <meta name="favicon/theme-color" content="#333333">
+  <link rel="canonical" href="https://hE82vPiTSpH8.com/chat">
+</head>
+
+<body>
+  <div id="main">
+    <!-- top bar -->
+    <div id="top-bar">
+      <div id="logo">
+        <img src="../assets/logo.svg" alt="Ohmegle Log">
+      </div>
+      <div id="top-right">
+        <div id="peopleOnline">
+          <p><span>0</span>+ online</p>
+        </div>
+        <!-- <button id="feedback-btn" class="button">Provide Feedback</button> -->
+      </div>
+    </div>
+
+    <!-- message area -->
+    <div id="message-area">
+      <div id="messages"></div>
+      <div id="typing" style="display: none" class="message">Stranger is typing...</div>
+      <!-- make this button a nice bootsrap button -->
+      <button id="downloadChatBtn" class="btn btn-primary" style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+          <path d="M.5 10a.5.5 0 0 1 .5-.5h5V6H3.707L8 1.707l4.293 4.293H10.5v3h5a.5.5 0 0 1 .5.5v2.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5V10zm10 1a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 .5-.5V10a.5.5 0 0 0-1 0v1h-2zm-4 0a.5.5 0 0 0 0 1H6v1a.5.5 0 0 0 1 0v-1h2a.5.5 0 0 0 0-1H6z"></path>
+        </svg>
+        Download Chat History
+      </button>    </div>
+
+    <!-- input area -->
+    <div id="input-area">
+      <button class="button" id="skip-btn">Skip<span>Esc</span></button>
+      <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off">
+      <button class="button" id="send-btn">Send<span>Enter</span></button>
+    </div>
+  </div>
+
+  <!-- feedback popup -->
+  <div id="feedbackModal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <h2>Provide Feedback</h2>
+      <form id="feedbackForm">
+        <textarea id="feedbackText" rows="10" placeholder="Your feedback..." required=""></textarea>
+        <input type="submit" class="button" id="submit-btn" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <script defer="" src="../js/main.js"></script>
+  <script defer="" src="../js/chat.js" type="module"></script>
+
+
+
+</body></html>
